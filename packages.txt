@@ -1,7 +1,0 @@
-npm i -save express
-npm i mongoose
-npm i -save passport express-flash express-session
-npm i passport-local
-npm i bcrypt
-npm i ejs
-npm i method-override
