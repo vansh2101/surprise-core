@@ -1,0 +1,114 @@
+.main{
+    width: 100%;
+    padding-top: 7vh;
+    float: left;
+}
+
+
+table{
+    width: 90%;
+    margin-top: 1.5%;
+    font-weight: bold;
+    font-size: 1.3vw;
+    text-align: center;
+    float: center;
+    margin-left: 4.5%;
+}
+
+.question{
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px gray;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 10px 20px;
+}
+.question h1{
+    color: #f26227;
+}
+.question h1 span{
+    color: black;
+    font-size: 1.5vw;
+    float: right;
+    font-weight: 550;
+}
+.question h2{
+    font-weight: 600;
+    padding: 5px;
+}
+.question input{
+    width: 95%;
+    padding: 10px;
+    border: 3px solid #f26227;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    outline: none;
+    margin-bottom: 1%;
+}
+.question input[type=submit]{
+    width: 30%;
+    background-color: #f26227;
+    font-weight: bold;
+    color: white;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    table{
+        font-size: 2vw;
+    }
+
+    .question h1 span{
+        font-size: 1.8vw;
+    }
+    .question input{
+        font-size: 1.8vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    table{
+        font-size: 2.5vw;
+    }
+
+    .question{
+        width: 80%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+
+    .question h1 span{
+        font-size: 2.5vw;
+    }
+    .question input{
+        font-size: 2.2vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    table{
+        font-size: 3vw;
+    }
+
+    .question{
+        margin-bottom: 7%;
+    }
+    .question h1{
+        font-size: 7vw;
+    }
+    .question h1 span{
+        font-size: 3.5vw;
+    }
+    .question h2{
+        font-size: 6vw;
+    }
+    .question input{
+        font-size: 3vw;
+        width: 90%;
+    }
+    .question input[type=submit]{
+        margin-top: 3%;
+    }
+}

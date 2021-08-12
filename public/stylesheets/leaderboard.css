@@ -1,0 +1,70 @@
+.main{
+    padding-top: 15vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 4%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th{
+    font-size: 2vw;
+    color: #f26227;
+    border-bottom: 2px solid black;
+}
+
+td{
+    font-size: 1.7vw;
+    padding: 15px 0px;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    h1{
+        font-size: 3.3vw;
+    }
+    table{
+        width: 95%;
+    }
+
+    th{
+        font-size: 2.4vw;
+    }
+    td{
+        font-size: 2.4vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 3.7vw;
+    }
+
+    th{
+        font-size: 2.7vw;
+    }
+    td{
+        font-size: 2.7vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1{
+        font-size: 4.5vw;
+    }
+
+    th{
+        font-size: 3.6vw;
+    }
+    td{
+        font-size: 3.6vw;
+    }
+}
