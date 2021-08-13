@@ -109,7 +109,7 @@ app.post('/play/:ques_no', checkLogin, function(req, res){
             log.save()
         }
 
-        res.redirect('/play')
+        res.redirect('/play#'+req.params.ques_no+'d')
     })
 })
 
