@@ -58,7 +58,7 @@
                 <% ques.forEach(function(question, i) {%> 
                     <div class="question" id='<%= question.number %>d'>
                         <h1>Question <%= i+1 %> <span>
-                            <% if (question.score < 0) {%>
+                            <% if (question.score < -10000) {%>
                                 200
                             <% } else {%>
                                 <%= question.score %>
