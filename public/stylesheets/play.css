@@ -25,6 +25,7 @@ table{
 }
 .question h1{
     color: #f26227;
+    font-size: 2vw;
 }
 .question h1 span{
     color: black;
@@ -35,13 +36,14 @@ table{
 .question h2{
     font-weight: 600;
     padding: 5px;
+    font-size: 1.5vw;
 }
 .question input{
     width: 95%;
     padding: 10px;
     border: 3px solid #f26227;
     border-radius: 10px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     outline: none;
     margin-bottom: 1%;
 }
@@ -59,12 +61,20 @@ table{
     table{
         font-size: 2vw;
     }
+    
+    .question h1{
+        font-size: 2.2vw;
+    }
+
+    .question h2{
+        font-size: 1.8vw;
+    }
 
     .question h1 span{
         font-size: 1.8vw;
     }
     .question input{
-        font-size: 1.8vw;
+        font-size: 1.6vw;
     }
 }
 
@@ -79,11 +89,19 @@ table{
         margin-bottom: 5%;
     }
 
+    .question h1{
+        font-size: 2.3vw;
+    }
+
+    .question h2{
+        font-size: 2vw;
+    }
+
     .question h1 span{
         font-size: 2.5vw;
     }
     .question input{
-        font-size: 2.2vw;
+        font-size: 1.7vw;
     }
 }
 
@@ -96,19 +114,20 @@ table{
         margin-bottom: 7%;
     }
     .question h1{
-        font-size: 7vw;
+        font-size: 4.7vw;
     }
     .question h1 span{
         font-size: 3.5vw;
     }
     .question h2{
-        font-size: 6vw;
+        font-size: 3.8vw;
     }
     .question input{
-        font-size: 3vw;
+        font-size: 2.5vw;
         width: 90%;
     }
     .question input[type=submit]{
         margin-top: 3%;
+        font-size: 2.7vw;
     }
 }
