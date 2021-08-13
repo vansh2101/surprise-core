@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Surprise</title>
+
+        <link rel="stylesheet" href="./stylesheets/global.css">
+        <link rel="stylesheet" href="./stylesheets/home.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="shortcut icon" type="image/ico" href="./assets/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div>
+            <ul class="nav">
+                <li><button onclick="showLogin()">Login</button></li>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+            
+                <span><a href='/'><img src='./assets/corelogo-new.png'></a></span>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="left">
+                <h1>ENIGMA <font color='#f26227'>(SURPRISE)</font></h1>
+
+                <p>
+                    No more wait for Obsession.
+                    <br><br>
+                    Delhi Public School, Dwarka's annual tech symposium, Computer Obsessed Radical Enthusiasts, is back!
+                    <br><br>
+                    From gaming to design, hacking to music production - test your obsession at one of the biggest events of the year.
+                    <br><br>
+
+                    <span>Play Now</span>
+                    <br>
+                    <a href='/leaderboard'><button>Leaderboard</button></a>
+                    <button onclick="showLogin()">Login</button>
+                </p>
+            </div>
+
+            <div class="right">
+                <img src="./assets/box.jpg">
+            </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <div class="header">
+                        <span>Sign In</span>
+                        <button onclick="hideLogin()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+
+                    <div class="form">
+                        <form action="/login" method="POST">
+                            <input type="text" name="username" placeholder="Username" required>
+                            <br>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <br>
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% if (messages.error) {%>
+            <div id='snackbar'>
+                <%= messages.error %>
+            </div>
+            <script>
+                var x = document.getElementById('snackbar');
+                x.className = 'visible';
+                setTimeout(function(){
+                    x.className = x.className.replace('visible', '')
+                }, 3000)
+            </script>
+        <% } %>
+    </body>
+    <script>
+        var modal = document.getElementById('modal')
+
+        function showLogin(){
+            modal.style.display='block'
+        }
+
+        function hideLogin(){
+            modal.style.display='none'
+        }
+
+        window.onclick = (event) => {
+            if (event.target == modal){
+                modal.style.display='none'
+            }
+        }
+    </script>
+</html>
