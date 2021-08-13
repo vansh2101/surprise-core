@@ -12,15 +12,9 @@
 
 .left h1{
     font-size: 3.8vw;
-}
-.left h1::after{
-    content: '';
-    width: 91%;
-    height: 33px;
-    background: #f26267;
-    opacity: 0.13;
-    margin-top: -6%;
-    display: block;
+    width: fit-content;
+    background: -webkit-linear-gradient(white 20%, rgba(242, 98, 103, 0.15));
+    float: left;
 }
 
 .left p{
@@ -70,9 +64,6 @@
     .left h1{
         font-size: 4.2vw;
     }
-    .left h1::after{
-        width: 80.5%;
-    }
     .left p{
         font-size: 1.7vw;
     }
@@ -97,11 +88,6 @@
     .left h1{
         font-size: 5.4vw;
     }
-    .left h1::after{
-        width: 61%;
-        margin-top: -4%;
-        height: 25px;
-    }
     .left p{
         font-size: 2.8vw;
     }
@@ -121,10 +107,6 @@
 @media only screen and (max-width: 500px) {
     .left h1{
         font-size: 7vw;
-    }
-    .left h1::after{
-        width: 79%;
-        margin-top: -6%;
     }
     .left p{
         font-size: 4vw;
