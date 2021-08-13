@@ -76,7 +76,7 @@ app.get('/play', checkLogin, function (req, res) {
                 dis.push(ques.question)
                 dis.push(ques.ans.replace(/ /g, ""))
             })
-            res.render('play', {ques: result, user: req.user, dis: dis.join(' ')})
+            res.render('play', {ques: result, user: req.user, dis: dis.join(' '), msg: req.flash('msg')})
         })
     })
 });
@@ -89,13 +89,16 @@ app.post('/play/:ques_no', checkLogin, function(req, res){
                     console.log('correct answer')
                 })
                 var status = 'correct'
+                req.flash('msg', 'Woohooo!! You typed in the correct answer.')
             }
             else{ 
                 var status = 'incorrect' 
+                req.flash('msg', 'Sorry!! You got it wrong')
             }
         }
         else{
             var status = 'pending'
+            req.flash('msg', 'We\'ll check this question and get back to you shortly.')
         }
 
         if (req.body.answer.length > 0){
@@ -109,7 +112,7 @@ app.post('/play/:ques_no', checkLogin, function(req, res){
             log.save()
         }
 
-        res.redirect('/play#'+req.params.ques_no+'d')
+        res.redirect('/play/#'+req.params.ques_no+'d')
     })
 })
 
