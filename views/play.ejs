@@ -35,7 +35,7 @@
             <br><br>
             <div>
                 <% ques.forEach(function(question, i) {%> 
-                    <div class="question">
+                    <div class="question" id='<%= question.number %>d'>
                         <h1>Question <%= i+1 %> <span><%= question.score %></span></h1>
                         <br>
                         <% if (user.admin == true){ %>
