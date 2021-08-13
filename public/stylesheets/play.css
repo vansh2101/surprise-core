@@ -104,6 +104,9 @@ table{
     .question input{
         font-size: 1.7vw;
     }
+    .question input[type=submit]{
+        width: 17%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -129,6 +132,7 @@ table{
     }
     .question input[type=submit]{
         margin-top: 3%;
-        font-size: 2.7vw;
+        font-size: 2.5vw;
+        width: 25%;
     }
 }
