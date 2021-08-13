@@ -4,7 +4,7 @@
 
 h1{
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.4vw;
     margin-bottom: 4%;
 }
 
@@ -15,13 +15,13 @@ table{
 }
 
 th{
-    font-size: 2vw;
+    font-size: 1.6vw;
     color: #f26227;
     border-bottom: 2px solid black;
 }
 
 td{
-    font-size: 1.7vw;
+    font-size: 1.15vw;
     padding: 15px 0px;
     font-weight: 500;
 }
@@ -29,42 +29,42 @@ td{
 
 @media only screen and (max-width: 1150px) {
     h1{
-        font-size: 3.3vw;
+        font-size: 2.7vw;
     }
     table{
         width: 95%;
     }
 
     th{
-        font-size: 2.4vw;
+        font-size: 1.9vw;
     }
     td{
-        font-size: 2.4vw;
+        font-size: 1.4vw;
     }
 }
 
 @media only screen and (max-width: 800px) {
     h1{
-        font-size: 3.7vw;
+        font-size: 3vw;
     }
 
     th{
-        font-size: 2.7vw;
+        font-size: 2vw;
     }
     td{
-        font-size: 2.7vw;
+        font-size: 1.6vw;
     }
 }
 
 @media only screen and (max-width: 500px) {
     h1{
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     th{
-        font-size: 3.6vw;
+        font-size: 3.2vw;
     }
     td{
-        font-size: 3.6vw;
+        font-size: 3vw;
     }
 }
