@@ -1,0 +1,125 @@
+.main{
+    display: flex;
+    width: 100%;
+    padding-top: 12vh;
+}
+
+.left{
+    width: 55%;
+    left: 0;
+    display: block;
+}
+
+.left h1{
+    font-size: 3.8vw;
+    width: fit-content;
+    background: -webkit-linear-gradient(white 20%, rgba(242, 98, 103, 0.15));
+    float: left;
+}
+
+.left p{
+    font-size: 1.3vw;
+    padding-top: 5vh;
+    width: 90%;
+    float: left;
+}
+.left span{
+    font-weight: bold;
+    font-size: 1.6vw;
+}
+.left button{
+    background-color: #f26227;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 600;
+    margin-top: 3%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 2%;
+}
+.left button:hover{
+    transform: translateY(-5px);
+}
+
+.right{
+    width: 45%;
+    right: 0;
+    text-align: center;
+}
+.right img{
+    width: 70%;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .main{
+        width: 98vw;
+        padding: 12vh 3.5vw;
+    }
+
+    .left h1{
+        font-size: 4.2vw;
+    }
+    .left p{
+        font-size: 1.7vw;
+    }
+    .left span{
+        font-size: 2vw;
+    }
+    .left button{
+        font-size: 1.8vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main{
+        display: block;
+    }
+
+    .left, .right{
+        width: 95%;
+        margin-top: 2%;
+    }
+
+    .left h1{
+        font-size: 5.4vw;
+    }
+    .left p{
+        font-size: 2.8vw;
+    }
+    .left span{
+        font-size: 3vw;
+    }
+    .left button{
+        font-size: 2.4vw;
+    }
+
+    .right img{
+        width: 50%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .left h1{
+        font-size: 7vw;
+    }
+    .left p{
+        font-size: 4vw;
+    }
+    .left span{
+        font-size: 4.2vw;
+    }
+    .left button{
+        font-size: 3.7vw;
+    }
+
+    .right img{
+        width: 55%;
+        margin-top: 10%;
+    }
+}

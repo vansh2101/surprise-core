@@ -1,0 +1,73 @@
+.main{
+    padding-top: 15vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.4vw;
+    margin-bottom: 4%;
+    width: fit-content;
+    background: -webkit-linear-gradient(white 20%, rgba(242, 98, 103, 0.15));
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th{
+    font-size: 1.6vw;
+    color: #f26227;
+    border-bottom: 2px solid rgba(242, 98, 39, 0.7);
+    padding: 5px 0px;
+}
+
+td{
+    font-size: 1.15vw;
+    padding: 15px 0px;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    h1{
+        font-size: 2.7vw;
+    }
+    table{
+        width: 95%;
+    }
+
+    th{
+        font-size: 1.9vw;
+    }
+    td{
+        font-size: 1.4vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 3vw;
+    }
+
+    th{
+        font-size: 2vw;
+    }
+    td{
+        font-size: 1.6vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1{
+        font-size: 4vw;
+    }
+
+    th{
+        font-size: 3.2vw;
+    }
+    td{
+        font-size: 3vw;
+    }
+}
