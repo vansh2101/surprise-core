@@ -14,7 +14,7 @@ const ques_db = require('./models/questions');
 const logs = require('./models/logs');
 
 
-db.connect('mongodb+srv://core:core@suprise-event.r86we.mongodb.net/event?retryWrites=true&w=majority', {
+db.connect(process.env.DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
