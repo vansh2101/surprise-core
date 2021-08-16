@@ -57,13 +57,7 @@
             <div>
                 <% ques.forEach(function(question, i) {%> 
                     <div class="question" id='<%= question.number %>d'>
-                        <h1>Question <%= i+1 %> <span>
-                            <% if (question.score < -10000) {%>
-                                200
-                            <% } else {%>
-                                <%= question.score %>
-                            <% } %>
-                        </span></h1>
+                        <h1>Question <%= i+1 %> <span><%= question.score %></span></h1>
                         <br>
                         <% if (user.admin == true){ %>
                             <h2><a href='/ques/<%= question.number %>'><%= question.question %></a></h2>
